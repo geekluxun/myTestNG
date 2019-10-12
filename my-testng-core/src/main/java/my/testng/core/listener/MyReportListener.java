@@ -1,8 +1,7 @@
-package listener;
+package my.testng.core.listener;
 
 import org.testng.IReporter;
 import org.testng.ISuite;
-import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 import org.testng.xml.XmlSuite;
 
@@ -16,9 +15,9 @@ import java.util.List;
  * @Description:
  * @Other:
  */
-public class ReportListener extends TestListenerAdapter implements IReporter {
+public class MyReportListener extends TestListenerAdapter implements IReporter {
 
     public void generateReport(List<XmlSuite> list, List<ISuite> list1, String s) {
-        System.out.println("======generateReport======");
+        System.out.println("======生成测试报告======");
     }
 }
